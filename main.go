@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-// FibSum returns the sum of all even Fibonacci numbers up to n
+// FibSum returns the sum of all even Fibonacci numbers up to n.
 func FibSum(n int) int {
 	it1, it2 := 0, 1
 	total := 0
