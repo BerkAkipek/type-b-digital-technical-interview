@@ -4,9 +4,9 @@ import "testing"
 
 func TestFibSum(t *testing.T) {
 	tests := []struct {
-		name string
-		n    int
-		want int
+		name     string
+		input    int
+		expected int
 	}{
 		{"n is 0", 0, 1},
 		{"n is 1", 1, 1},
@@ -19,11 +19,11 @@ func TestFibSum(t *testing.T) {
 		{"n is 1000", 1000, 798},
 	}
 
-	for _, tt := range tests {
-		t.Run(tt.name, func(t *testing.T) {
-			got := FibSum(tt.n)
-			if got != tt.want {
-				t.Errorf("FibSum(%d) = %d; want %d", tt.n, got, tt.want)
+	for _, testCase := range tests {
+		t.Run(testCase.name, func(t *testing.T) {
+			result := FibSum(testCase.input)
+			if result != testCase.expected {
+				t.Errorf("FibSum(%d) = %d; want %d", testCase.input, result, testCase.expected)
 			}
 		})
 	}
