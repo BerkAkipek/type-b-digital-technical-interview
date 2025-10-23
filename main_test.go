@@ -8,8 +8,9 @@ func TestFibSum(t *testing.T) {
 		input    int
 		expected int
 	}{
-		{"n is 0", 0, 1},
-		{"n is 1", 1, 1},
+		{"n is -2", -2, 0},
+		{"n is 0", 0, 0},
+		{"n is 1", 1, 0},
 		{"n is 2", 2, 2},
 		{"n is 3", 3, 2},
 		{"n is 8", 8, 10},

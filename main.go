@@ -5,7 +5,7 @@ import "fmt"
 // FibSum returns the sum of all even integers in given interval
 func FibSum(n int) int {
 	if n <= 1 {
-		return 1
+		return 0
 	}
 
 	it1, it2 := 0, 1
